@@ -1,0 +1,48 @@
+Макрос-это записанная последовательность команд, которую затем выполняет Excel.
+Сделаем макрос напечатания:
+Sub печать()
+
+ Ctrl+P
+
+ActiveCell.FormulaR1C1 = "academia-excel.ru"
+Range("P6").Select
+
+End Sub
+
+
+
+Sub замена()
+
+
+Сочетание клавиш: Ctrl+c
+
+Cells.Replace What:="akademia-excel.ru", Replacement:="school", LookAt:= _ xlPart, SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _ ReplaceFormat:=False
+
+End Sub
+
+Макрос замены шрифта
+Sub заменашрифта()
+
+ Ctrl+q
+
+Cells.Select
+Range("K13").Activate
+Selection.Font.Italic = True
+Range("M11").Select
+
+End Sub
+
+
+Только для1
+
+Sub толькодля1()
+
+If Worksheets(ActiveSheet.Name).Name = "Лист1" Then
+Cells.Select
+Range("K13").Activate
+Selection.Font.Italic = True
+Range("M11").Select
+
+End If
+
+End Sub
