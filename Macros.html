@@ -1,48 +1,64 @@
-Макрос-это записанная последовательность команд, которую затем выполняет Excel.
-Сделаем макрос напечатания:
-Sub печать()
+<!DOCTYPE html>
+<html>
 
- Ctrl+P
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
 
-ActiveCell.FormulaR1C1 = "academia-excel.ru"
-Range("P6").Select
+  <body>
+    
+     <h1>Отчет по макросам</h1>
+    
+    <p>Макрос-это записанная последовательность команд, которую затем выполняет Excel.</p>
+<p>Сделаем макрос печати:<br>
+Sub печать()<br>
 
-End Sub
+ Ctrl+P<br>
 
+ActiveCell.FormulaR1C1 = "academia-excel.ru"<br>
+Range("P6").Select<br>
 
-
-Sub замена()
-
-
-Сочетание клавиш: Ctrl+c
-
-Cells.Replace What:="akademia-excel.ru", Replacement:="school", LookAt:= _ xlPart, SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _ ReplaceFormat:=False
-
-End Sub
-
-Макрос замены шрифта
-Sub заменашрифта()
-
- Ctrl+q
-
-Cells.Select
-Range("K13").Activate
-Selection.Font.Italic = True
-Range("M11").Select
-
-End Sub
+End Sub<br></p>
 
 
-Только для1
 
-Sub толькодля1()
+Sub замена()<br>
 
-If Worksheets(ActiveSheet.Name).Name = "Лист1" Then
-Cells.Select
-Range("K13").Activate
-Selection.Font.Italic = True
-Range("M11").Select
 
-End If
+Сочетание клавиш: Ctrl+c<br>
 
-End Sub
+Cells.Replace What:="akademia-excel.ru", Replacement:="school", LookAt:= _ xlPart, SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _ ReplaceFormat:=False<br>
+
+End Sub<br></p>
+
+<p>Макрос замены шрифта<br>
+Sub заменашрифта()<br>
+
+ Ctrl+q<br>
+
+Cells.Select<br>
+Range("K13").Activate<br>
+Selection.Font.Italic = True<br>
+Range("M11").Select<br>
+
+End Sub<br></p>
+
+
+<p>Только для1<br>
+
+Sub толькодля1()<br>
+
+If Worksheets(ActiveSheet.Name).Name = "Лист1" Then<br>
+Cells.Select<br>
+Range("K13").Activate<br>
+Selection.Font.Italic = True<br>
+Range("M11").Select<br>
+
+End If<br>
+
+End Sub<br></p>
+   
+  </body>
+
+</html>
