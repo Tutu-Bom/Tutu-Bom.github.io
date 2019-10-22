@@ -4,6 +4,16 @@
   <head>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+  
+
+  
+    
+<!DOCTYPE html>
+
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 
 
 <meta http-equiv="Content-Type"
@@ -31,16 +41,16 @@ document.getElementById("out4").value="a+b/2";
 <button onclick="er()">1.15</button>
 <br>
 <br>
-А)<input type="text" value="а" id="out1">
+А)<input type="text" value="а/bc" id="out1">
 <br>
 <br>
-Б)<input type="text" value="б" id="out2">
+Б)<input type="text" value="a/b*c" id="out2">
 <br>
 <br>
-В)<input type="text" value="в" id="out3">
+В)<input type="text" value="a+b/2" id="out3">
 <br>
 <br>
-Г)<input type="text" value="г" id="out4">
+Г)<input type="text" value="x-10" id="out4">
 <br>
 <br>
 Д)<input type="text" value="5.45*a+2b/2-a" id="out4">
@@ -56,5 +66,6 @@ document.getElementById("out4").value="a+b/2";
 
 
   </body>
+
 
 </html>
