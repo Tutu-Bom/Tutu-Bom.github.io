@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+
+<meta http-equiv="Content-Type"
+content="text/html; charset=windows-1251">
+<title>Стили</title>
+<style> p {background-color: #fff;
+        margin: 20px auto;
+        font-family: Times;
+        font-size: 2em; 
+        text-transform: uppercase;
+        color: rgba(0,168,255,0.5);
+        text-shadow: 8px 8px 0 rgba(255,0,180,0.5);}
+</style>
+<script>
+function er(){
+document.getElementById("out1").value="-1/x^2";
+document.getElementById("out2").value="a/bc";
+document.getElementById("out3").value="a*b/c";
+document.getElementById("out4").value="a+b/2";
+
+}
+</script>
+</head>
+<body>
+<button onclick="er()">1.15</button>
+<br>
+<br>
+А)<input type="text" value="а/b+c" id="out1">
+<br>
+<br>
+Б)<input type="text" value="a/b*c" id="out2">
+<br>
+<br>
+В)<input type="text" value="a+b/2" id="out3">
+<br>
+<br>
+Г)<input type="text" value="x-10" id="out4">
+<br>
+<br>
+Д)<input type="text" value="5.45*a+2b/2-a" id="out4">
+<br>
+<br>
+У)<input type="text" value="1/1+a+b/2" id="out4">
+<br>
+<br>
+
+<div id="inf1"></div>
+<div id="inf2"></div>
+<div id="inf3"></div>
+
+
+  </body>
+
+
+</html>
