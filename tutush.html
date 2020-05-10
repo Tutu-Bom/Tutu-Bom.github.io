@@ -133,3 +133,44 @@ n = String(document.getElementById('N_size').value);
 for (; n.length > e; ) {
 tdID = 'inp' + e;
 fruits[e] = document.
+getElementById(tdID).value;
+e++;
+}
+}
+
+
+function CreateRow() {
+var y = document.createElement('TR');
+y.setAttribute('id', 'ROW');
+document.getElementById('myTable2').appendChild(y);
+}
+function CreateTable2() {
+var x = document.createElement('TABLE');
+x.setAttribute('id', 'myTable2');
+document.body.appendChild(x);
+}
+
+function output_array_input_table() {
+
+CreateRow();
+n = fruits.length - 1;
+for (var i = 0; i <= n; i++) {
+var z = document.createElement('TD');
+var t = document.createTextNode(fruits[i]);
+z.appendChild(t);
+document.getElementById('ROW').appendChild(z);
+}
+count2++;
+}
+</script>
+<body>
+<input value="Victor" id="N_size" type="text" />
+<a href="#on" class="button15" onclick="crarinput()">CREATE 1 dimension ARRAY INPUT FIELDS</a>
+<a href="#on" class="button15" onclick="readArray()">READ ARRAY</a>
+<a href="#on" class="button15" onclick="aroutput()">Нажми на меня</a>
+<br>
+<br>
+<br>
+<div id="inf1"></div>
+</body>
+</html>
